@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Beranda Aplikasi Survei & Pemilu</title>
+  <style>
+    body, h1, p {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: url('/modul4/sponeb.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f9;
+      color: #333;
+      padding: 50px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #ffffff;
+      text-shadow: 2px 2px 2px rgb(0 168 51);
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    /* Styling untuk kartu */
+    .card {
+      border: 1px solid #00ff0066; /* Border tipis */
+      border-radius: 15px;
+      padding: 40px;
+      width: 250px;
+      box-shadow: 2px 2px 8px #00ff0066; /* Bayangan halus */
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek hover */
+      background-color: rgba(0, 0, 0, 0.9);
+      cursor: pointer;
+    }
+
+    /* Efek hover pada kartu */
+    .card:hover {
+      border: 1px #333;
+      transform: translateY(-5px); /* Kartu sedikit terangkat */
+      box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2); /* Bayangan lebih tebal */
+      background-color: #00df00;
+      color: #333;
+    }
+
+    /* Styling untuk teks di dalam kartu */
+    .card p {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .card:hover p {
+      color: #333;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Selamat Datang di Pengisian Survei & Pemilu</h1>
+
+  <div class="menu">
+    <div class="card" onclick="window.location.href='Soal1/index.php';">
+      <p>Isi Survei</p>
+    </div>
+    <div class="card" onclick="window.location.href='Soal2/index.php';">
+      <p>Isi Pemilu</p>
+    </div>
+  </div>
+</body>
+</html>
